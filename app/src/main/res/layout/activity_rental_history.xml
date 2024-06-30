@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.auth.Rental_History">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_vector_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmployment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Rental History"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1.9dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/lineView"
+                app:layout_constraintTop_toBottomOf="@id/tvEmployment"/>
+
+
+            <TextView
+                android:id="@+id/tvCurrentResidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="Current Residence"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/tvCurrentAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Current Address"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentResidence" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingHorizontal="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentAddress" />
+
+            <TextView
+                android:id="@+id/tvHowLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="How long have you been residing at this address?"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et1" />
+
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvHowLong"/>
+
+            <TextView
+                android:id="@+id/tvMonthlyRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Monthly Rent"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et2" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMonthlyRent" />
+            <TextView
+                android:id="@+id/tvLandlordName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Landlord's Name"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et3" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:maxLines="1"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvLandlordName"/>
+
+            <TextView
+                android:id="@+id/tvLandlordContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Landlord's Contact Number"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et4" />
+
+            <EditText
+                android:id="@+id/et5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvLandlordContactNumber"/>
+            <TextView
+                android:id="@+id/tvReasonForLeavingThisProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Reason(s) for leaving this property"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et5" />
+
+            <EditText
+                android:id="@+id/et6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text=""
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvReasonForLeavingThisProperty"/>
+
+
+            <TextView
+                android:id="@+id/tvPreviousResidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Previous Residence (If applicable)"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et6" />
+
+            <TextView
+                android:id="@+id/tvPreviousAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Previous Address:"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPreviousResidence" />
+
+            <EditText
+                android:id="@+id/et7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPreviousAddress" />
+
+            <TextView
+                android:id="@+id/tvHowLongDidYouStay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="How long did you stay at this address?"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et7"/>
+
+
+            <EditText
+                android:id="@+id/et8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHowLongDidYouStay" />
+            <TextView
+                android:id="@+id/tvMonthlyRent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Monthly Rent"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et8"/>
+
+            <EditText
+                android:id="@+id/et9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvMonthlyRent1"/>
+
+            <TextView
+                android:id="@+id/tvLandlordName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Landlord's Name"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et9"/>
+
+            <EditText
+                android:id="@+id/et10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvLandlordName1"/>
+
+            <TextView
+                android:id="@+id/tvLandlordContactNumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Landlord's Contact Number"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et10"/>
+
+            <EditText
+                android:id="@+id/et11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvLandlordContactNumber1"/>
+
+            <TextView
+                android:id="@+id/tvReasonForLeavingThisProperty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Reason(s) for leaving this property"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et11"/>
+
+
+            <EditText
+                android:id="@+id/et12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:text=""
+                android:gravity="top"
+                android:paddingTop="@dimen/_8sdp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvReasonForLeavingThisProperty1"/>
+            <TextView
+                android:id="@+id/tvHaveYouEverBeenEvicted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Have you ever been evicted from a rental residence? "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et12" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_19sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHaveYouEverBeenEvicted">
+
+                <RadioButton
+                    android:id="@+id/radioYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:buttonTint="@color/black"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:buttonTint="@color/black"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvYouHaveMissed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Have you missed two or more rental payments in the\n\past 12 months? "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup"/>
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_19sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvYouHaveMissed">
+
+                <RadioButton
+                    android:id="@+id/radioYes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioNo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:buttonTint="@color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvHaveYouEverRefused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Have you ever refused to pay rent when due?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup1"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_19sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHaveYouEverRefused">
+
+                <RadioButton
+                    android:id="@+id/radioYes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioNo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:buttonTint="@color/black"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="No" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/tvIfYouHaveAnswered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="If you have answered YES to any of the above, please\n\state your reasons and/or circumstances:"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup2"/>
+
+            <EditText
+                android:id="@+id/et13"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:text=""
+                android:gravity="top"
+                android:paddingTop="@dimen/_8sdp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvIfYouHaveAnswered"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/IVSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:backgroundTint="#C7001D"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15ssp"
+                app:cornerRadius="@dimen/_7sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et13"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

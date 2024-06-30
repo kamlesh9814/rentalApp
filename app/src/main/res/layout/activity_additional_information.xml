@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.auth.AdditionalInformationActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_vector_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmployment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Additional Information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBack"
+                app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1.9dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/lineView"
+                app:layout_constraintTop_toBottomOf="@id/tvEmployment" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/animal"
+                app:layout_constraintStart_toStartOf="@+id/ivBack"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <TextView
+                android:id="@+id/tvTheLandLord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:text="The Landlord does not allow pets in the rental\n\property."
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivImage1"
+                app:layout_constraintStart_toEndOf="@+id/ivImage1"
+                app:layout_constraintTop_toTopOf="@id/ivImage1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:src="@drawable/smoke"
+                app:layout_constraintStart_toStartOf="@+id/ivImage1"
+                app:layout_constraintTop_toBottomOf="@id/ivImage1" />
+
+            <TextView
+                android:id="@+id/tvTheLandLordDoesNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:text="The Landlord does not allow smoking of\n\cigarettes in the rental property."
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivImage2"
+                app:layout_constraintStart_toEndOf="@+id/ivImage2"
+                app:layout_constraintTop_toTopOf="@id/ivImage2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:src="@drawable/house"
+                app:layout_constraintStart_toStartOf="@+id/ivImage2"
+                app:layout_constraintTop_toBottomOf="@id/ivImage2" />
+
+            <TextView
+                android:id="@+id/tvTheLandLordDoesNotAllow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:text="The Landlord does not allow the use of\n\waterbeds on the premises."
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivImage3"
+                app:layout_constraintStart_toEndOf="@+id/ivImage3"
+                app:layout_constraintTop_toTopOf="@id/ivImage3" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="left"
+                android:text="I declare that the information I have provided is true\n\and correct, and contain no misrepresentations. If\n\misrepresentations are found after a residential\n\lease agreement is entered into between the\n\Landlord and Applicant, the Landlord shall have the\n\option to terminate the residential lease agreement\n\and seek all available remedies."
+                android:textAlignment="gravity"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="@+id/ivImage3"
+                app:layout_constraintTop_toBottomOf="@id/ivImage3" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="left"
+                android:text="The Applicant authorizes the Landlord to verify all\n\ references and facts, including but not limited to\n\ current and previous landlords, employers and\n\ personal references. The Applicant understands\n\ that incomplete or incorrect information provided in\n\ the application may cause a delay in processing or\n\ may result in the denial of application."
+                android:textAlignment="gravity"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv1"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <TextView
+                android:id="@+id/tvApplicantSignature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Applicant's Signature"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cclSignature"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                app:layout_constraintTop_toBottomOf="@id/tvApplicantSignature">
+
+                <ImageView
+                    android:id="@+id/IVSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Date"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cclSignature" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:clickable="false"
+                android:text=""
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+            <TextView
+                android:id="@+id/tvCoApplicantSignature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Co-Applicant's Signature "
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et2"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cclSignature1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                app:layout_constraintTop_toBottomOf="@id/tvCoApplicantSignature">
+
+                <ImageView
+                    android:id="@+id/IVSignature1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Date"
+                android:textColor="#9D9D9D"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cclSignature1" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/cornours_drawable"
+                android:backgroundTint="#F5F5F5"
+                android:drawablePadding="10dp"
+                android:clickable="false"
+                android:text=""
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDate1"
+                app:layout_constraintTop_toBottomOf="@id/tvDate1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/IVSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:backgroundTint="#C7001D"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_15ssp"
+                app:cornerRadius="@dimen/_7sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
